@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 240px;
+    background: #2c3e50; /* Dark Blue-Grey */
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar .logo-details i {
+    color: #fff;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.sidebar .logo-details .logo_name {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sidebar .nav-links {
+    margin-top: 10px;
+}
+
+.sidebar .nav-links li{
+    list-style-type: none;
+}
+.sidebar .nav-links li a {
+  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 15px;
+}
+.category-toggle-btn{
+        padding: 15px;
+
+}
+.sidebar i {
+    font-size: 20px;
+    color: #bdc3c7;
+    min-width: 40px;
+}
+
+ .links_name {
+    color: #bdc3c7 !important;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+/* Hover effects */
+.sidebar a:hover {
+    background: #34495e;
+}
+
+.sidebar .nav-links a:hover i,
+.sidebar .nav-links a:hover .links_name {
+    color: #fff;
+}
+
+.sidebar .nav-links li.log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main content margin taake sidebar ke peeche data na chupe */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f4f7f6;
+}
+/* Form Container Styling */
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+    .form-control:focus {
+        border-color: #6366f1 !important;
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1) !important;
+        outline: none !important;
+    }
+    .type-card:hover {
+        border-color: #4f46e5 !important;
+        background-color: #fff !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    label:has(input[type="radio"]:checked) {
+        border-color: #4f46e5 !important;
+        background-color: #f5f3ff !important;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+/* Form Group (Label + Input) */
+
+/* Success/Error Message Styling */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
+    padding: 0;
+}
