@@ -5,7 +5,87 @@
     // 2. Output Buffering shuru
     ob_start(); 
 ?>
+<style>
+     /* Premium Size Selector Buttons */
+    .size-selector input[type="radio"] {
+        display: none;
+    }
+    .size-selector label {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 43px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: all 0.2s ease;
+    }
+    .size-selector input[type="radio"]:checked + label {
+        border-color: #111;
+        background-color: #111;
+        color: #fff;
+    }
+    
+    /* Quantity Selector */
+    .qty-input {
+        width: 60px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-left: none;
+        border-right: none;
+        font-size: 0.9rem;
+    }
+    .qty-btn {
+        background: none;
+        border: 1px solid #ddd;
+        width: 35px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 
+    /* Accordion Customization for Luxury Look */
+    .accordion-item {
+        border-left: none !important;
+        border-right: none !important;
+        border-radius: 0 !important;
+        background: transparent;
+    }
+    .accordion-button {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding-left: 0;
+        padding-right: 0;
+        color: #111 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    .accordion-body {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+        .main-product-img {
+            height: 450px;
+        }
+        .product-info-panel {
+            padding-left: 0;
+            margin-top: 2rem;
+        }
+    }
+</style>
 
 
 <div class="container my-5 pt-3">
