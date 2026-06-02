@@ -1,0 +1,317 @@
+        :root {
+            --primary-font: 'Inter', sans-serif;
+            --title-font: 'Playfair Display', serif;
+            --luxury-black: #111111;
+            --sale-red: #d93838;
+        }
+
+        body {
+            font-family: var(--primary-font);
+            background-color: #fafafa;
+            color: var(--luxury-black);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Premium Minimal Navbar */
+        .navbar-brand {
+            font-family: var(--title-font);
+            font-weight: 600;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            color: var(--luxury-black) !important;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #555 !important;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-item.active .nav-link {
+            color: var(--luxury-black) !important;
+        }
+
+        /* Sale link highlights red */
+        .nav-sale {
+            color: var(--sale-red) !important;
+            font-weight: 600;
+        }
+        .nav-sale:hover {
+            color: #b32424 !important;
+        }
+
+        .nav-icon {
+            font-size: 1.2rem;
+            color: var(--luxury-black);
+            margin-left: 15px;
+            text-decoration: none;
+            position: relative;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: var(--luxury-black);
+            color: #aeaeae;
+            font-size: 0.85rem;
+        }
+        footer h6 {
+            font-family: var(--title-font);
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        footer a {
+            color: #aeaeae;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+    /* Product Detail Custom Styles */
+    .product-thumbnails img {
+        width: 70px;
+        height: 90px;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s;
+    }
+    .product-thumbnails img:hover, .product-thumbnails img.active {
+        opacity: 1;
+        border: 1px solid #111;
+    }
+    .main-product-img {
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+        background-color: #f3f3f3;
+    }
+    .product-info-panel {
+        padding-left: 2rem;
+    }
+    .product-brand {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #777;
+    }
+    .product-main-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #111;
+    }
+    .product-detail-price {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #111;
+    }
+    
+    /* Premium Size Selector Buttons */
+    .size-selector input[type="radio"] {
+        display: none;
+    }
+    .size-selector label {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 43px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: all 0.2s ease;
+    }
+    .size-selector input[type="radio"]:checked + label {
+        border-color: #111;
+        background-color: #111;
+        color: #fff;
+    }
+    
+    /* Quantity Selector */
+    .qty-input {
+        width: 60px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-left: none;
+        border-right: none;
+        font-size: 0.9rem;
+    }
+    .qty-btn {
+        background: none;
+        border: 1px solid #ddd;
+        width: 35px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /* Accordion Customization for Luxury Look */
+    .accordion-item {
+        border-left: none !important;
+        border-right: none !important;
+        border-radius: 0 !important;
+        background: transparent;
+    }
+    .accordion-button {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding-left: 0;
+        padding-right: 0;
+        color: #111 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    .accordion-body {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+        .main-product-img {
+            height: 450px;
+        }
+        .product-info-panel {
+            padding-left: 0;
+            margin-top: 2rem;
+        }
+    }
+
+      /* Premium Signup Styles */
+    .signup-container {
+        max-width: 480px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+    }
+    
+    .signup-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #111111;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Clean Minimal Form Inputs */
+    .style-input-group .form-control {
+        border-radius: 0;
+        border: 1px solid #dddddd;
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        font-family: 'Inter', sans-serif;
+        color: #333333;
+        transition: border-color 0.3s ease;
+    }
+    
+    .style-input-group .form-control:focus {
+        border-color: #111111;
+        box-shadow: none;
+    }
+    
+    .style-input-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        color: #111111;
+        margin-bottom: 8px;
+        display: block;
+    }
+    
+    /* Checkbox styling */
+    .form-check-input {
+        border-radius: 0 !important;
+    }
+    .form-check-input:checked {
+        background-color: #111111;
+        border-color: #111111;
+        box-shadow: none !important;
+    }
+    .form-check-input:focus {
+        box-shadow: none !important;
+        border-color: #dddddd;
+    }
+
+    /* Premium Button */
+    .btn-signup {
+        background-color: #111111;
+        color: #ffffff;
+        border-radius: 0;
+        padding: 14px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border: 1px solid #111111;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-signup:hover {
+        background-color: #ffffff;
+        color: #111111;
+        border-color: #111111;
+    }
+
+    .login-link {
+        color: #111111;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+    .login-link:hover {
+        color: #555555;
+    }
+
+    /* Login Container Styling */
+.login-container {
+    max-width: 450px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+/* Custom Links */
+.forgot-link, .login-link {
+    color: #4f46e5; /* Jo bhi aapka brand primary color ho */
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover, .login-link:hover {
+    color: #3730a3;
+}
+
+/* Form Eye Icon Adjustment */
+#togglePassword {
+    z-index: 10;
+}

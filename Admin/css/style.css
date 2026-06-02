@@ -141,3 +141,89 @@
     transition: 0.3s;
     padding: 0;
 }
+
+ /* Premium Signup Styles */
+    .signup-container {
+        max-width: 480px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+    }
+    
+    .signup-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #111111;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Clean Minimal Form Inputs */
+    .style-input-group .form-control {
+        border-radius: 0;
+        border: 1px solid #dddddd;
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        font-family: 'Inter', sans-serif;
+        color: #333333;
+        transition: border-color 0.3s ease;
+    }
+    
+    .style-input-group .form-control:focus {
+        border-color: #111111;
+        box-shadow: none;
+    }
+    
+    .style-input-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        color: #111111;
+        margin-bottom: 8px;
+        display: block;
+    }
+    
+    /* Checkbox styling */
+    .form-check-input {
+        border-radius: 0 !important;
+    }
+    .form-check-input:checked {
+        background-color: #111111;
+        border-color: #111111;
+        box-shadow: none !important;
+    }
+    .form-check-input:focus {
+        box-shadow: none !important;
+        border-color: #dddddd;
+    }
+
+    /* Premium Button */
+    .btn-signup {
+        background-color: #111111;
+        color: #ffffff;
+        border-radius: 0;
+        padding: 14px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border: 1px solid #111111;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-signup:hover {
+        background-color: #ffffff;
+        color: #111111;
+        border-color: #111111;
+    }
+
+    .login-link {
+        color: #111111;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+    .login-link:hover {
+        color: #555555;
+    }

@@ -20,8 +20,19 @@ function insertData($table, $dataArray)
 
     return mysqli_query($conn, $insert);
 }
-function selectQuery($table,$colName,$value){
-     global $conn;
-    return mysqli_query($conn , "select $colName from $table where $colName = '$value'");
-
+function selectQuery($table, $colName, $value)
+{
+    global $conn;
+    return mysqli_query($conn, "select $colName from $table where $colName = '$value'");
 }
+function redirectToSignup()
+{
+    header('Location:../Authentication/Signup.php');
+    exit;
+}
+function redirectToLogin()
+{
+    header('Location:../Authentication/login.php');
+    exit;
+}
+?>
